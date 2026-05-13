@@ -25,12 +25,82 @@ a {
     background: linear-gradient(to bottom, #0a0612 0%, #150a22 100%);
 }
 
-.tagline {
-    max-width: 600px;
-    margin: 10px auto 20px;
+/* ===== HERO (UPGRADED FIRST PAGE) ===== */
+.hero-enhanced {
+    padding: 80px 20px;
+    background: radial-gradient(circle at top, #1a0f2d, #0a0612 70%);
 }
 
-/* ===== HORIZONTAL SCROLLER ===== */
+.hero-inner {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-image-wrapper {
+    flex-shrink: 0;
+}
+
+.hero-image-large {
+    width: 340px;
+    border-radius: 16px;
+    box-shadow: 0 0 30px #ff33dd88;
+    transition: 0.3s ease;
+}
+
+.hero-image-large:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 0 40px #ff66eeaa;
+}
+
+/* ===== SECTION CARDS ===== */
+.section-card {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px 30px 40px;
+    background: #150a22;
+    border-radius: 16px;
+    border: 1px solid #3a1a55;
+    box-shadow: 0 0 20px #b300ff33;
+    backdrop-filter: blur(4px);
+}
+
+/* ===== NEON DIVIDER ===== */
+.neon-divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff33dd, transparent);
+    margin: 40px 0;
+    opacity: 0.6;
+}
+
+/* ===== VISUAL GRID ===== */
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.enhanced-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 14px #ff33dd55;
+    transition: 0.3s ease;
+}
+
+.enhanced-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff66eeaa;
+}
+
+/* ===== HORIZONTAL SCROLLER (SECOND PAGE) ===== */
 .horizontal-scroll {
     display: flex;
     gap: 20px;
@@ -93,5 +163,16 @@ a {
 /* ===== CENTER ===== */
 .center {
     text-align: center;
-    padding: 40px 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 800px) {
+    .hero-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image-large {
+        width: 260px;
+    }
 }
