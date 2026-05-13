@@ -1,0 +1,102 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0a0612;
+    color: #e8d9ff;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #d66bff;
+    text-shadow: 0 0 10px #ff33dd;
+}
+
+/* Links */
+a {
+    color: #ff66ee;
+    text-decoration: none;
+}
+
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #0a0612 0%, #150a22 100%);
+}
+
+.tagline {
+    max-width: 600px;
+    margin: 10px auto 20px;
+}
+
+/* HERO IMAGE */
+.hero-card-wrapper {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255, 0, 180, 0.08);
+    box-shadow: 0 0 20px #ff33dd55, 0 0 40px #aa00ff33 inset;
+    backdrop-filter: blur(6px);
+}
+
+.hero-image {
+    width: 280px;
+    filter: drop-shadow(0 0 18px #ff33dd);
+}
+
+/* ===== SECTIONS ===== */
+.description, .promo, .register {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* PROMO GRID */
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.promo-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 14px #ff33dd55;
+}
+
+/* UPDATE BOXES */
+.update-box {
+    background: #1a0f2d;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #3a1a55;
+    box-shadow: 0 0 12px #b300ff33;
+}
+
+/* BUTTON */
+.cta-button {
+    display: inline-block;
+    padding: 16px 34px;
+    background: linear-gradient(135deg, #ff33dd, #b300ff);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 25px;
+    box-shadow: 0 0 18px #ff33dd, 0 0 28px #b300ff55;
+    transition: 0.25s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 0 26px #ff66ee, 0 0 40px #cc33ffaa;
+}
+
+/* BACK SECTION */
+.back {
+    text-align: center;
+    padding: 40px 20px 60px;
+}
