@@ -2,15 +2,15 @@
 body {
     margin: 0;
     padding: 0;
-    background: #0a0612; /* deep cosmic purple-black */
-    color: #e8d9ff;      /* soft neon lavender */
+    background: #0a0612;
+    color: #e8d9ff;
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
 }
 
 /* Headings glow with magenta */
 h1, h2 {
-    color: #d66bff; /* neon magenta */
+    color: #d66bff;
     text-shadow: 0 0 10px #ff33dd;
 }
 
@@ -42,7 +42,7 @@ a {
     display: inline-block;
     padding: 20px;
     border-radius: 16px;
-    background: rgba(255, 0, 180, 0.08); /* faint magenta aura */
+    background: rgba(255, 0, 180, 0.08);
     box-shadow:
         0 0 20px #ff33dd55,
         0 0 40px #aa00ff33 inset;
@@ -118,7 +118,7 @@ a {
     background: #150a22;
 }
 
-/* CTA BUTTON (SOLID NEON) */
+/* CTA BUTTON */
 .cta-button {
     display: inline-block;
     padding: 16px 34px;
@@ -176,7 +176,7 @@ a {
     color: #e8d9ff;
 }
 
-/* ===== BASIC RESPONSIVENESS ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
     .hero {
         padding: 40px 16px;
