@@ -30,31 +30,46 @@ a {
     margin: 10px auto 20px;
 }
 
-/* ===== CARD FEED ===== */
-.card-feed {
+/* ===== HORIZONTAL SCROLLER ===== */
+.horizontal-scroll {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
 }
 
-/* CARD ITEM */
-.card-item {
+.horizontal-scroll::-webkit-scrollbar {
+    height: 10px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background: #b300ff;
+    border-radius: 10px;
+}
+
+.scroll-card {
+    min-width: 260px;
     background: #1a0f2d;
     padding: 20px;
     border-radius: 16px;
     border: 1px solid #3a1a55;
     box-shadow: 0 0 20px #b300ff33;
+    scroll-snap-align: start;
 }
 
-/* CARD IMAGE */
-.card-img {
+.scroll-img {
     width: 100%;
     border-radius: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     box-shadow: 0 0 18px #ff33dd55;
+}
+
+/* ===== CONTENT BLOCK ===== */
+.content-block {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 /* ===== BUTTON ===== */
