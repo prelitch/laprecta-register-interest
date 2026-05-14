@@ -7,53 +7,60 @@
 </head>
 <body>
 
-    <!-- HERO -->
-    <header class="hero hero-enhanced">
-        <div class="hero-inner">
-            <div class="hero-text">
-                <h1>Laprecta</h1>
-                <p class="tagline">A racing strategy game where you build the track as you play.</p>
-            </div>
+<script>
+// VIEW COUNTER (1 per person)
+if (!localStorage.getItem("laprecta_viewed")) {
+    fetch("viewcount.php");
+    localStorage.setItem("laprecta_viewed", "yes");
+}
+</script>
 
-            <div class="hero-image-wrapper">
-                <img src="normal card.png" alt="Laprecta Card" class="hero-image-large">
-            </div>
+<header class="hero hero-enhanced">
+    <div class="hero-inner">
+        <div class="hero-text">
+            <h1>Laprecta</h1>
+            <p class="tagline">A racing strategy game where you build the track as you play.</p>
         </div>
-    </header>
 
-    <!-- SECTION: WHAT IS LAPRECTA -->
-    <section class="section-card">
-        <h2>What is Laprecta?</h2>
-        <p>
-            Laprecta is a competitive lap‑racing strategy game where players build the track as they move through it.
-            Each turn adds new spaces, triggers Bless or Curse effects, and shifts momentum through forward or backward movement.
-            Checkpoints, traps, and timing windows create constant decisions.
-        </p>
-        <p class="prototype-note">Prototype in development — not final.</p>
-    </section>
-
-    <div class="neon-divider"></div>
-
-    <!-- SECTION: VISUALS -->
-    <section class="section-card">
-        <h2>Laprecta Visuals</h2>
-
-        <div class="promo-grid enhanced-grid">
-            <img src="Screenshot 2026-05-13 111914.png" alt="Visual 1">
-            <img src="Screenshot 2026-05-13 111753.png" alt="Visual 2">
-            <img src="Screenshot 2026-05-13 111659.png" alt="Visual 3">
-            <img src="Screenshot 2026-05-13 111632.png" alt="Visual 4">
+        <div class="hero-image-wrapper">
+            <img src="normal card.png" alt="Laprecta Card" class="hero-image-large">
         </div>
-    </section>
+    </div>
+</header>
 
-    <div class="neon-divider"></div>
+<section class="section-card">
+    <h2>What is Laprecta?</h2>
+    <p>
+        Laprecta is a competitive lap‑racing strategy game where players build the track as they move through it.
+        Each turn adds new spaces, triggers Bless or Curse effects, and shifts momentum through forward or backward movement.
+        Checkpoints, traps, and timing windows create constant decisions.
+    </p>
+    <p class="prototype-note">Prototype in development — not final.</p>
+</section>
 
-    <!-- SECTION: BUTTON -->
-    <section class="section-card center">
-        <h2>Project Updates</h2>
-        <p>See development progress, announcements, and what’s coming next.</p>
-        <a href="updates.html" class="cta-button">View Updates</a>
-    </section>
+<div class="neon-divider"></div>
+
+<section class="section-card">
+    <h2>Laprecta Visuals</h2>
+
+    <div class="promo-grid enhanced-grid">
+        <img src="Screenshot 2026-05-13 111914.png">
+        <img src="Screenshot 2026-05-13 111753.png">
+        <img src="Screenshot 2026-05-13 111659.png">
+        <img src="Screenshot 2026-05-13 111632.png">
+    </div>
+</section>
+
+<div class="neon-divider"></div>
+
+<section class="section-card center">
+    <h2>Project Updates</h2>
+    <a href="updates.html" class="cta-button">View Updates</a>
+
+    <h2 style="margin-top:40px;">How to Play</h2>
+    <a href="howtoplay.html" class="cta-button">Learn the Rules</a>
+</section>
 
 </body>
 </html>
+
